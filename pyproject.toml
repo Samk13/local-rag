@@ -1,0 +1,25 @@
+[tool.ruff]
+line-length = 120
+exclude = ["tests"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+ignore = ["F401", "D100"]
+
+
+[tool.ruff.format]
+# quote-style = "single"
+docstring-code-format = true
