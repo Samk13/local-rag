@@ -5,6 +5,7 @@ help:
 	@echo "install   - Install the package in editable mode"
 	@echo "format    - Format the code with isort and black"
 	@echo "run       - Run the local RAG server"
+	@echo "watch     - Watch the tailwindcss input file and compile it to the output file"
 
 install:
 	pip install -e ".[tests]"

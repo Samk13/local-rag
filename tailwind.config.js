@@ -4,7 +4,11 @@ module.exports = {
   
   content: ["./local_rag/app/templates/**/*.{html,htm}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Figtree", "Inter var", sans-serif',],
+      }
+    },
   },
   plugins: [],
 }
