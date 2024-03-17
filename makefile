@@ -6,6 +6,7 @@ help:
 	@echo "format    - Format the code with isort and black"
 	@echo "run       - Run the local RAG server"
 	@echo "watch     - Watch the tailwindcss input file and compile it to the output file"
+	@echo "test     - test the package"
 
 install:
 	pip install -e ".[tests]"
@@ -18,5 +19,8 @@ watch:
 
 run:
 	python local_rag/run.py
+
+test:
+	pytest
 
 default: help

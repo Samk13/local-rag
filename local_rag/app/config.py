@@ -1,3 +1,6 @@
+from enum import Enum
+
+
 class Config:
     DEBUG = True
 
@@ -5,7 +8,7 @@ class Config:
 ALLOWED_EXTENSIONS = {"md", "py", "json", "cfg", "html", "css"}
 
 LLM_MODEL = "mistral-openorca"
-from enum import Enum
+
 
 class LLMModels(Enum):
     MISTRAL_OPENORCA = "mistral-openorca"

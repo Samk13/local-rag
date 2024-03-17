@@ -1,4 +1,5 @@
 import sys
+
 from flask import Blueprint, current_app, jsonify, request
 from marshmallow import Schema, ValidationError, fields
 
@@ -16,6 +17,7 @@ class CompletionSchema(Schema):
     system = fields.Str(required=True)
     model = fields.Enum(enum=LLMModels, by_value=True, required=True)
     temperature = fields.Float(required=True)
+
 
 # Instantiate the schema
 completion_schema = CompletionSchema()
