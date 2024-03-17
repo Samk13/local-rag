@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to Local RAG</title>
-    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
-    <script>
-      // If you want to enforce dark mode regardless of system preferences
-      tailwind.config = {
-        darkMode: 'class',
-      };
-      document.documentElement.classList.add('dark');
-    </script>
-</head>
-<body class="bg-slate-900 text-white flex items-center justify-center h-screen">
+{% extends 'base.html' %}
+
+{% block title %}Home - Local RAG API{% endblock %}
+
+{% block content %}
+<div class="bg-slate-900 text-white flex items-center justify-center h-screen">
   <div class="text-center">
     <div class="">
       <h1 class="text-5xl font-bold mb-6">Local RAG API</h1>
@@ -22,5 +13,5 @@
       </a>
     </div>
   </div>
-</body>
-</html>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Local RAG</title>
+    <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet">
+</head>
+<body class="bg-slate-900 text-white">
+    <header>
+        <!-- Your header content -->
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+    <script>
+        // Initialize TailwindCSS config if necessary
+        tailwind.config = { darkMode: 'class' };
+        document.documentElement.classList.add('dark');
+    </script>
+</body>
+</html>
